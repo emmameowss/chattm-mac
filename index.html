@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="padding-top: 50px;">
-    <h1>test</h1>
+    <h1>chat™</h1>
+    <!-- user count -->
+    <p id="usercount" style="display: flex; margin: 20px auto 25px auto;">x users online</p>
+    <!-- username form -->
+    <form id="username-form" style="position: fixed; top: 16px; right: 110px; display:flex; gap: 8px;">
+        <input type="text" id="username-input" placeholder="Set a username" maxlength="20">
+        <button>set</button>
+    </form>
+    <!-- message form -->
+    <form id="message-form">
+        <input type="file" accepts=".jpg, .jpeg, .png, .gif, .webp, .svg" id="file-input">
+        <input type="text" id="message-input" autocomplete="off" placeholder="message">
+        <button>send</button>
+    </form>
+    <!-- upload status and typing indicators -->
+    <p id="upload-error" style="color:pink; font-style: italic; display: none; text-align: center;"></p>
+    <p id="upload-status" style="display: none; text-align: center;"></p>
+    <p id="typing-indicator" style="color:gray; font-style: italic; min-height: 1em;"></p>
+    <!-- sign out button -->
+    <button id="signout" style="position: fixed; top: 16px; right: 16px;">sign out</button>
+    <!-- messages -->
+    <ul></ul>
 </body>
 </html>
